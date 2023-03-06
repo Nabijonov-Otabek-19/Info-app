@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class InfoActivity extends AppCompatActivity {
 
-    private ImageView image;
+    private ImageView image, btnBack;
     private TextView title, desc;
 
     @Override
@@ -27,6 +28,11 @@ public class InfoActivity extends AppCompatActivity {
         image = findViewById(R.id.img_animal);
         title = findViewById(R.id.txt_animalName);
         desc = findViewById(R.id.txt_about);
+        btnBack = findViewById(R.id.btn_back);
+
+        btnBack.setOnClickListener(view -> {
+            finish();
+        });
 
         if (number == 1) {
             image.setImageResource(R.drawable.cat);
@@ -34,11 +40,13 @@ public class InfoActivity extends AppCompatActivity {
             desc.setText(R.string.cat);
 
         } else if (number == 2) {
+
             image.setImageResource(R.drawable.dog);
             title.setText("dog");
             desc.setText(R.string.dog);
 
         } else if (number == 3) {
+
             image.setImageResource(R.drawable.lion);
             title.setText("lion");
             desc.setText(R.string.lion);

@@ -7,33 +7,59 @@
     android:orientation="vertical"
     tools:context=".InfoActivity">
 
-    <ImageView
-        android:id="@+id/img_animal"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop" />
-
-    <TextView
-        android:id="@+id/txt_animalName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txt_about"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
-            android:padding="16dp"
-            android:textColor="@color/black" />
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_back" />
+
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/img_animal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat" />
+
+            <TextView
+                android:id="@+id/txt_animalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="Animal name" />
+
+            <TextView
+                android:id="@+id/txt_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
 
     </ScrollView>
 

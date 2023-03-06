@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -13,305 +14,423 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/cat"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/cat" />
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="Cat"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="About Animals"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="16sp" />
 
-        </FrameLayout>
+        </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/dog"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/cat"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/dog" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="Dog"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cat" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="Cat"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/lion"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/dog"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/lion" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="lion"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="Dog"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/begemot"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/lion"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/begemot" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="hypopotamus"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lion" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="lion"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/kangaroo"
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/begemot"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/kangaroo" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="kangaroo"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/begemot" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="hypopotamus"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/zebra"
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/kangaroo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/zebra" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="zebra"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kangaroo" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="kangaroo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/jiraf"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/zebra"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/jiraf" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="giraffe"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zebra" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="zebra"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/wolf"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/jiraf"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/wolf" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="wolf"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jiraf" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="giraffe"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/fox"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/wolf"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/fox" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="fox"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wolf" />
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="wolf"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <FrameLayout
-            android:id="@+id/elephant"
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="?android:selectableItemBackground"
-            android:clickable="true">
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
 
-            <ImageView
+            <FrameLayout
+                android:id="@+id/fox"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/elephant" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-            <TextView
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fox" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="fox"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <FrameLayout
+                android:id="@+id/elephant"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="16dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="4"
-                android:shadowDy="4"
-                android:shadowRadius="4"
-                android:text="elephant"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_height="200dp"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true">
 
-        </FrameLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/elephant" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:text="elephant"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
