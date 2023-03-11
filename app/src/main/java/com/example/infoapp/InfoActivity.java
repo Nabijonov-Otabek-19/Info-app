@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class InfoActivity extends AppCompatActivity {
 
-    private ImageView image, btnBack;
+    private ImageView image;
     private TextView title, desc;
 
     @Override
@@ -28,11 +28,6 @@ public class InfoActivity extends AppCompatActivity {
         image = findViewById(R.id.img_animal);
         title = findViewById(R.id.txt_animalName);
         desc = findViewById(R.id.txt_about);
-        btnBack = findViewById(R.id.btn_back);
-
-        btnBack.setOnClickListener(view -> {
-            finish();
-        });
 
         if (number == 1) {
             image.setImageResource(R.drawable.cat);
