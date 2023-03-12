@@ -1,4 +1,4 @@
-package uz.gita.infoapp;
+package uz.gita.infoapp_bek;
 
 import android.content.Intent;
 import android.os.Bundle;

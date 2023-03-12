@@ -12,11 +12,11 @@
         android:theme="@style/Theme.InfoApp"
         tools:targetApi="31">
         <activity
-            android:name="uz.gita.infoapp.InfoActivity"
+            android:name="uz.gita.infoapp_bek.InfoActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="uz.gita.infoapp.MainActivity"
+            android:name="uz.gita.infoapp_bek.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

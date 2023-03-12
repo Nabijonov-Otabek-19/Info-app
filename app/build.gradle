@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'uz.gita.infoapp'
+    namespace 'uz.gita.infoapp_bek'
     compileSdk 33
 
     defaultConfig {
-        applicationId "uz.gita.infoapp"
+        applicationId "uz.gita.infoapp_bek"
         minSdk 24
         targetSdk 33
         versionCode 1
